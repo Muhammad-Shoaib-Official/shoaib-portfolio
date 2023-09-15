@@ -1,0 +1,133 @@
+/* -----------------Header----------------- */
+.header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.header-bg {
+  width: 100%;
+  /* margin-top: 70px; */
+  position: relative;
+  height: calc(100vh - 60px);
+}
+
+.header-bg::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: calc(100vh);
+  display: block;
+  background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1));
+  top: 0;
+  left: 0;
+}
+
+.header-bg video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 60px;
+}
+
+.header-content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.header-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--header-title-color);
+  margin-bottom: 1rem;
+}
+
+.name {
+  color: var(--theme-color);
+}
+
+.header-text {
+  line-height: 1rem;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: var(--header-text-color);
+}
+
+.header-btn {
+  text-align: center;
+  display: inline-block;
+  color: white;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.arrow {
+  position: relative;
+  padding-right: 0.5rem;
+}
+
+.header-btn:hover.arrow {
+  transform: rotate(90deg);
+}
+
+.social {
+  display: block;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+
+.social-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icon {
+  width: 16px;
+  margin-top: 0.5rem;
+  filter: grayscale(100%);
+  transition: 0.5s ease-in-out;
+}
+
+.social-icon:hover {
+  filter: grayscale(0%);
+}
+
+@media(max-width:768px) {
+  .header-title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  .header-text {
+    font-size: 1rem;
+    line-height: 1.0rem;
+    padding: 0 2rem;
+  }
+}
+
+@media(max-width:540px) {
+  .header-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+}
+
+@media(max-width:360px) {
+  .header-title {
+    font-size: 1.5rem;
+  }
+
+  .header-text {
+    font-size: 0.8rem;
+  }
+}

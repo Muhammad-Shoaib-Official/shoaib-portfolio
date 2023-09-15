@@ -1,6 +1,6 @@
 "use client";
 import Image from 'next/image'
-import React from 'react'
+import React from 'react';
 
 const Navbar = () => {
   function showMenu() {
@@ -14,8 +14,7 @@ const Navbar = () => {
       <div className="nav-wrapper flex-row">
         <div className="logo">
           <a href=" " className="logo-content">
-            <Image src="/images/icons/ms logo.png" alt="" width={1120} height={80} />
-
+            <Image src="/images/icons/ms logo.png" alt="" width={80} height={80} />
           </a>
         </div>
         <div className="menu-icon" onClick={showMenu}>

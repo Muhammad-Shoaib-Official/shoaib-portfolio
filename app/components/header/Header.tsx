@@ -5,9 +5,9 @@ const Header = () => {
   return (
     <section className="header">
       <div className="header-bg">
-        {/* <video autoplay loop>
-                    <source src="./images/header-background.mp4">
-                </video>               */}
+        <video autoPlay loop>
+          <source src="./images/header-background.mp4" />
+        </video>
       </div>
       <div className="header-wrapper">
         <div className="header-content"  >
