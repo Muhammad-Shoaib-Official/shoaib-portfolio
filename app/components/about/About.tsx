@@ -14,7 +14,7 @@ const About = () => {
         <section className="info">
           <div className="image" data-aos="fade-right" data-aos-duration="1000">
             <div className="image-wrapper">
-              <Image src="/images/shoaib.png" alt="Shoaib" width={100} height={100} />
+              <Image src="/images/shoaib.png" alt="Shoaib" width={500} height={500} />
             </div>
           </div>
           <div className="info-data" data-aos="fade-left" data-aos-duration="1000">
