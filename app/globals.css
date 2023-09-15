@@ -2,20 +2,190 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-  /*  */
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Ruluko', sans-serif;
+  /* font-family: sans-serif; */
+  background-color: #171c26;
+  scroll-behavior: smooth;
 }
+
+.main {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* ----------------Theme Colors-------------- */
+:root {
+  --nav-bg-color: #171c26;
+  --logo-color: #fff;
+  --nav-link-color: rgb(133, 133, 133);
+  --nav-link-hover-color: #fff;
+  --social-icon-bg-color: #fff;
+  --header-title-color: #fff;
+  --header-text-color: rgb(240, 240, 240);
+  --small-text-color: rgb(133, 133, 133);
+  --about-top-text-color: #fff;
+  --about-heading-color: #fff;
+  --service-top-heading-color: #fff;
+  --service-heading-color: #fff;
+  --info-sub-heading-color: #fff;
+  --info-heading-color: #fff;
+  --attribte-color: #fff;
+  --theme-color: #009e66;
+}
+
+/* --------------Global Classes----------- */
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media (max-width:768px) {
+  .heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .sub-heading {
+    padding-top: 0.2rem;
+    font-size: 1rem !important;
+    line-height: 1.5rem;
+  }
+}
+
+.btn {
+  color: white;
+  font-size: 75%;
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid var(--theme-color);
+  border: solid 1px white;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background: var(--theme-color);
+  border: 1px solid var(--theme-color);
+}
+
+.small-text {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  color: var(--small-text-color);
+}
+
+.hr {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-style: inset;
+}
+
+/* --------------Global Classes----------- */
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media (max-width:768px) {
+  .heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .sub-heading {
+    padding-top: 0.2rem;
+    font-size: 1rem !important;
+    line-height: 1.5rem;
+  }
+}
+
+.btn {
+  color: white;
+  font-size: 75%;
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid var(--theme-color);
+  border: solid 1px white;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background: var(--theme-color);
+  border: 1px solid var(--theme-color);
+}
+
+.small-text {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  color: var(--small-text-color);
+}
+
+.hr {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-style: inset;
+}
+
+@import "./components/navbar/style.css";
+@import "./components/header/style.css";
+@import "./components/about/style.css";
+@import "./components/resume/style.css";
+@import "./components/skills/style.css";
+@import "./components/services/style.css";
+@import "./components/portfolio/style.css";
+@import "./components/testimonial/style.css";
+@import "./components/contact/style.css";
+@import "./components/footer/style.css";
